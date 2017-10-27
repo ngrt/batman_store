@@ -14,50 +14,93 @@
 </head>
 
 <body>
+
+    <nav>
+        <div class="nav-wrapper blue-grey lighten-2">
+          <a href="#" class="brand-logo center"><img src="image_resources/batman/batman.png"></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#"><i class="material-icons">star</i></a></li>
+            <li><a href="#"><i class="material-icons">store</i></a></li>
+            <li><a href="#"><i class="material-icons">email</i></a></li>
+          </ul>
+        </div>
+    </nav>
+
     <div class="row">
-        <div class="col s12 m4">
+        <div class="col s12">
+            <img src="image_resources/batman/batman-header.jpg" class="responsive-img">
+         </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col s12 m6 l4">
             <div class="card">
+                <span class="card-title">Figurine Batman</span>
                 <div class="card-image">
                     <img src="image_resources/batman/batman-figurine.jpg">
-                    <span class="card-title grey darken-2">Figurine Batman</span>
+                    <span class="card-title grey darken-2">1000 $</span>
                 </div>
                 <div class="card-content">
                     <p>
-                        Parfois discuter de son code peut mettre en évidence des erreurs, voici votre propre assistant personnel.
+                        Parfois discuter de son code peut mettre en évidence des erreurs, voici votre assistant personnel.
                     </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Commander</a>
                 </div>
             </div>
         </div>
-        <div class="col s12 m4">
+        <div class="col s12 m6 l4">
             <div class="card">
+                <span class="card-title">Tasse Batman</span>
                 <div class="card-image">
                     <img src="image_resources/batman/batman-tasse.jpg">
-                    <span class="card-title grey darken-2">Tasse Batman</span>
+                    <span class="card-title grey darken-2">7 $</span>
                 </div>
                 <div class="card-content">
                     <p>
                         Parce que coder c'est cool mais coder avec du café c'est mieux, voici une super tasse.
                     </p>
                 </div>
+                <div class="card-action">
+                    <a href="#">Commander</a>
+                </div>
             </div>
         </div>
-        <div class="col s12 m4">
+        <div class="col s12 m6 l4">
             <div class="card">
+                <span class="card-title">Cle USB</span>
                 <div class="card-image">
                     <img src="image_resources/batman/batman-cle-usb.jpeg">
-                    <span class="card-title grey darken-2">Cle USB</span>
+                    <span class="card-title grey darken-2">50 $</span>
                 </div>
                 <div class="card-content">
                     <p>
-                        Parfois discuter de son code peut mettre en évidence des erreurs, voici votre propre assistant personnel.
+                        Le must de tout bon dev une clé USB, quand c'est Batman c'est encore mieux!
                     </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Commander</a>
                 </div>
             </div>
         </div>
     </div>
 
+    <footer></footer>
+
+
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            //init carroussel
+            $('.carousel.carousel-slider').carousel({indicators: true, fullWidth: true, noWrap: true});
+        })
+    </script>
+
+      
 </body>
 </html>
