@@ -17,6 +17,12 @@
     <div class="container">
         <nav>
             <div class="nav-wrapper blue-grey lighten-2">
+                <span class = "switch">
+                    <label class="white-text">Batman
+                        <input type = "checkbox">
+                        <span class = "lever"></span>Kebab
+                    </label>
+                </span> 
               <a href="#" class="brand-logo center"><img src="image_resources/batman/batman.png"></a>
               <ul class="right hide-on-med-and-down">
                 <li><a href="#"><i class="material-icons">star</i></a></li>
@@ -114,19 +120,24 @@
 
     </div>
 
-
-
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
     <script>
+
+        var countChecked = function() {
+            alert("aaa");
+        };
+
         $(document).ready(function(){
             //init carroussel
-            $('.carousel.carousel-slider').carousel({indicators: true, fullWidth: true, noWrap: true});
+            if( $('input[type=super]').is(':checked') ){
+                alert("jQuery c'est super");
+            } else {
+                alert("jQuery c'est autre chose");
+            }
         })
     </script>
-
-      
 </body>
 </html>
